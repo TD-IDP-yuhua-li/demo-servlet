@@ -1,9 +1,9 @@
 package com.tw.servlet.learn.listener;
 
-import jakarta.servlet.ServletRequestEvent;
-import jakarta.servlet.ServletRequestListener;
-import jakarta.servlet.annotation.WebListener;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.ServletRequestEvent;
+import javax.servlet.ServletRequestListener;
+import javax.servlet.annotation.WebListener;
+import javax.servlet.http.HttpServletRequest;
 import lombok.extern.log4j.Log4j;
 import lombok.extern.slf4j.Slf4j;
 

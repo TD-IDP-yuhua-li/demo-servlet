@@ -1,9 +1,9 @@
 package com.tw.servlet.learn.listener;
 
-import jakarta.servlet.ServletRequestAttributeEvent;
-import jakarta.servlet.ServletRequestAttributeListener;
-import jakarta.servlet.annotation.WebListener;
-import jakarta.servlet.http.HttpServletRequest;
+import javax.servlet.ServletRequestAttributeEvent;
+import javax.servlet.ServletRequestAttributeListener;
+import javax.servlet.annotation.WebListener;
+import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -31,7 +31,7 @@ public class CustomerServletRequestAttributeListener implements ServletRequestAt
     }
 
     @Override
-    public void attributeReplaced(ServletRequestAttributeEvent srae) {
-        ServletRequestAttributeListener.super.attributeReplaced(srae);
+    public void attributeReplaced(ServletRequestAttributeEvent servletRequestAttributeEvent) {
+
     }
 }
