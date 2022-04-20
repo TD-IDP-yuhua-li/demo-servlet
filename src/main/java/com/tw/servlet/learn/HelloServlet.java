@@ -22,6 +22,8 @@ public class HelloServlet extends HttpServlet {
         final String dateFromServletConfig = this.getServletConfig().getInitParameter("date");
         final String dateFromMyServlet = this.getInitParameter("date");
         final String username = req.getParameter("username");
+        req.setAttribute("name", "Lee");
+        req.removeAttribute("name");
         resp.setContentType("text/html");
         final PrintWriter writer = resp.getWriter();
         writer.println("<h1> Hello Servlet username= " + username + "</h1");
