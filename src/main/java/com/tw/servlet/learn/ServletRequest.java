@@ -2,7 +2,7 @@ package com.tw.servlet.learn;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tw.servlet.learn.domain.User;
-import javax.servlet.ServletException;
+
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 @WebServlet("/request")
 public class ServletRequest extends HelloServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         final String contentType = req.getContentType();
         final String header = req.getHeader("User-Agent");
         final String protocol = req.getProtocol();
@@ -33,9 +33,9 @@ public class ServletRequest extends HelloServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
+        String line;
         BufferedReader reader = req.getReader();
         while ((line=reader.readLine())!=null){
             stringBuilder.append(line);

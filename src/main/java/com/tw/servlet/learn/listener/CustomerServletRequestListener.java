@@ -1,11 +1,11 @@
 package com.tw.servlet.learn.listener;
 
+import lombok.extern.slf4j.Slf4j;
+
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
 import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
-import lombok.extern.log4j.Log4j;
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @WebListener
