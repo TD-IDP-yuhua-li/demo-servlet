@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @WebListener
-public class CustomerServletRequestAttributeListener implements ServletRequestAttributeListener {
+public class CustomServletRequestAttributeListener implements ServletRequestAttributeListener {
     @Override
     public void attributeAdded(ServletRequestAttributeEvent srae) {
         final HttpServletRequest httpServletRequest = (HttpServletRequest) srae.getServletRequest();

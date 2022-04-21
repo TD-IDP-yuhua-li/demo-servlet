@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Slf4j
 @WebListener
-public class CustomerServletRequestListener implements ServletRequestListener {
+public class CustomServletRequestListener implements ServletRequestListener {
     @Override
     public void requestDestroyed(ServletRequestEvent sre) {
         final HttpServletRequest httpServletRequest = (HttpServletRequest) sre.getServletRequest();

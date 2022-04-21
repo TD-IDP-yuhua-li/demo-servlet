@@ -10,7 +10,7 @@ import java.util.Set;
 public class WebApplicationServletContainerInitializer implements ServletContainerInitializer {
 
     public static final String LEE_MAIL_COM = "Lee@mail.com";
-    public static final String AUTHOR_EMAIL = "author-emial";
+    public static final String AUTHOR_EMAIL = "author-mail";
     public static final String AUTHOR_NAME = "author-name";
     public static final String LEE = "Lee";
 

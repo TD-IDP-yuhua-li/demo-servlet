@@ -10,12 +10,16 @@ import java.io.PrintWriter;
 @WebServlet("/hello-tomcat")
 public class HelloTomcat extends HttpServlet {
     public static final String AUTHOR_NAME = "author-name";
-    public static final String AUTHOR_EMAIL = "author-emial";
+    public static final String AUTHOR_EMAIL = "author-email";
+    public static final String MESSAGE = "message";
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         final String name = req.getServletContext().getInitParameter(AUTHOR_NAME);
         final String email = req.getServletContext().getInitParameter(AUTHOR_EMAIL);
+
+        req.getServletContext().setAttribute(MESSAGE, "I am Hello tomcat servlet");
+
         resp.setContentType("text/html");
         final PrintWriter writer = resp.getWriter();
         writer.println("<h1> name= " + name + "</h1");
